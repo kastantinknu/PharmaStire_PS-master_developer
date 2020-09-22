@@ -1,0 +1,16 @@
+﻿@using PharmaStire_PS.Models
+@using PharmaStire_PS.Models.ViewModels;
+@using PharmaStire_PS.Infrastructure
+@*//чтобы на классы моделей представлений можно было ссылаться в в представлениях, не указывая пространство имен*@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Wangkanai.Detection
+@addTagHelper PharmaStire_PS.Infrastructure.*, PharmaStire_PS
+@addTagHelper *, LazZiya.TagHelpers
+
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Wangkanai.Detection
+@*//оператор сообщает мвс что вспомогательные ф-ии дескрипторов следует искать в пространстве имен SportsStore.Infrastructure*@
+
+@*272стр В файл импортирования представлений добавляется пространство имен, которое содержит расширяющий
+    метод, так что его можно применять в частичном представлении.*@

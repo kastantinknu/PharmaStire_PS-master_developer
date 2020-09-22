@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmaStire_PS", "PharmaStire_PS.csproj", "{DB8C1BAF-F38B-420C-AB97-C96DEF788064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB8C1BAF-F38B-420C-AB97-C96DEF788064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8C1BAF-F38B-420C-AB97-C96DEF788064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8C1BAF-F38B-420C-AB97-C96DEF788064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8C1BAF-F38B-420C-AB97-C96DEF788064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B58A3C0-901B-4090-9368-C3E238E1F079}
+	EndGlobalSection
+EndGlobal
