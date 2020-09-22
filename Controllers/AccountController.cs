@@ -20,7 +20,8 @@ namespace PharmaStire_PS.Controllers
         {
             userManager = userMgr;
             signInManager = signInMgr;
-            IdentitySeedData.EnsurePopulated(userMgr).Wait();
+            //production
+           // IdentitySeedData.EnsurePopulated(userMgr).Wait();
         }
         [AllowAnonymous]
         public ViewResult Login(string returnUrl)

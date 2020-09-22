@@ -17,7 +17,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" asp-href-include="/lib/bootstrap-4.5.0-dist/dist/css/*.css" />
+    @*<link rel="stylesheet" asp-href-include="/lib/bootstrap-4.5.0-dist/dist/css/*.css" />*@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" asp-href-include="/lib/fontawesome-free-5.14.0-web/css/*.css" />
+
     <title>@ViewBag.Title</title>
     <style>
         .input-validation-error {

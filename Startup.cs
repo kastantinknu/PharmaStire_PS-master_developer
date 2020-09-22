@@ -239,9 +239,9 @@ namespace PharmaStire_PS
                 //});
                 endpoints.MapDefaultControllerRoute();
             });
-              //SeedData.EnsurePopulated(app);
+              SeedData.EnsurePopulated(app);
             //Чтобы обеспечить начальное заполнение базы данных Identitу во время запуска приложения, добавим в метод Configure() класса Startup оператор.
-            // IdentitySeedData.EnsurePopulated(app);
+             IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

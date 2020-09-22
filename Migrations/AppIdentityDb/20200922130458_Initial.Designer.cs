@@ -10,7 +10,7 @@ using PharmaStire_PS.Models;
 namespace PharmaStire_PS.Migrations.AppIdentityDb
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20200916155540_Initial")]
+    [Migration("20200922130458_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

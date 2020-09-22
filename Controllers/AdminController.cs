@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PharmaStire_PS.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Builder;
 
 namespace PharmaStire_PS.Controllers
 {
@@ -56,12 +57,14 @@ namespace PharmaStire_PS.Controllers
             }
             return RedirectToAction("Index"); 
         }
-        [HttpPost]
-        public IActionResult SeedDatabase()
-        {
-            SeedData.EnsurePopulated(HttpContext.RequestServices);
-            return RedirectToAction(nameof(Index));
-        }
+        //production
+        //[HttpPost]
+        //public IActionResult SeedDatabase()
+        //{
+        //    SeedData.EnsurePopulated(HttpContext.RequestServices);
+        //    return RedirectToAction(nameof(Index));
+        //}
+        
     }
     //Начнем с создания отдельного контроллера для управления каталогом
     //товаров.Добавим в папку Controllers файл класса по имени AdminController.cs

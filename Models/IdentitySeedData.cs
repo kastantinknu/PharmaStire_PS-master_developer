@@ -15,19 +15,10 @@ namespace PharmaStire_PS.Models
     {
         private const string adminUser = "Admin";
         private const string adminPassword = "Secret123$";
-        //public static async void EnsurePopulated(IApplicationBuilder app)
-        //{
-        //    UserManager<IdentityUser> userManager = app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
-        //    //!!
-        //    IdentityUser user = await userManager.FindByIdAsync(adminUser);
-        //    if (user == null)
-        //    {
-        //        user = new IdentityUser("Admin");
-        //        await userManager.CreateAsync(user, adminPassword);
-        //    }
-        //}
-        public static async Task EnsurePopulated(UserManager<IdentityUser> userManager)
+        public static async void EnsurePopulated(IApplicationBuilder app)
         {
+            UserManager<IdentityUser> userManager = app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
+            //!!
             IdentityUser user = await userManager.FindByIdAsync(adminUser);
             if (user == null)
             {
@@ -35,6 +26,15 @@ namespace PharmaStire_PS.Models
                 await userManager.CreateAsync(user, adminPassword);
             }
         }
+        //public static async Task EnsurePopulated(UserManager<IdentityUser> userManager)
+        //{
+        //    IdentityUser user = await userManager.FindByIdAsync(adminUser);
+        //    if (user == null)
+        //    {
+        //        user = new IdentityUser("Admin");
+        //        await userManager.CreateAsync(user, adminPassword);
+        //    }
+        //}
         //В коде используется класс UserManager<T>, который система ASP.NET Core Identity
         //предоставляет в виде службы для управления пользователями.В базе данных производится
         //    поиск учетной записи пользователя Admin, которая в случае ее отсутствия создается
